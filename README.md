@@ -21,7 +21,7 @@
 2. 이미지 Crop 및 Resize (94×24×3)  
 3. 스페이스바 입력 시 **LPRNet** OCR 실행 (CPU 실행)  
 4. 결과 문자열 Overlay → 10초간 이미지 상단에 표시  
-
+![pipeline](./results/pipeline.png)
 
 ---
 
@@ -55,8 +55,16 @@ README.md              # 프로젝트 설명 문서
 
 | 모델         | 파일명                              | 실행 위치  |
 |--------------|--------------------------------------|-------------|
-| EfficientDet | `efficientdet_lite0_edgetpu.tflite` | Dual Edge TPU |
+| EfficientDet_Lite_0 | `efficientdet_lite0_edgetpu.tflite` | Dual Edge TPU |
 | LPRNet       | `lprnet_float32.tflite`             | CPU         |
+
+##EfficientDet_Lite0
+
+![efficientDet_Lite0](./results/efficientDet_Lite0.png)
+
+##LPRNet구조
+
+![LPRNet](./results/LPRNet.png)
 
 ---
 
@@ -102,6 +110,14 @@ README.md              # 프로젝트 설명 문서
 **YOLOv8n → EfficientDet_Lite0**, **USB TPU → PCIe Dual Edge TPU**로 전환하여  
 FPS를 **약 2.5배 증가**시키고 전체 모델 용량을 **절반 이하로 감소**시켰습니다.  
 이는 경량화 및 고속화를 동시에 달성한 **휴대 가능한 번호판 인식기**로서의 가능성을 보여줍니다.
+
+## 기존 파이프라인 fps
+
+![single_result](./results/single_result.png)
+
+## 변경한 파이프라인 fps
+
+![dual_result](./results/dual_result.png)
 
 ---
 
