@@ -49,6 +49,8 @@ README.md              # 프로젝트 설명 문서
 | Display       | 7” DSI Touch Display |
 | Power         | USB PD (5V 2.4A) / PD 트리거 5V 5A |
 
+![Environment](./results/result.png)
+
 ---
 
 ##  Model Files
